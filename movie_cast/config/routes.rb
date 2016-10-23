@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :v1 do
     resources :movies, only: [:create, :index]
     resources :casts, only: [:create, :index]
+    resources :descriptions, only: [:create]
   end
-end
+ end
 end
